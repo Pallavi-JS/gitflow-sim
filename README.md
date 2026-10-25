@@ -1,7 +1,7 @@
 # Gitflow Simulation
 
 **Phase 3: Git Version Control, Mini Project**
-Author: <your name>
+Author: Pallavi
 Repository: https://github.com/Pallavi-JS/gitflow-sim
 
 This project simulates a complete Gitflow workflow: feature branch, pull request, merge, release, hotfix, merging back to both long-lived branches, and a pre-commit hook that guards every commit.
@@ -79,4 +79,16 @@ git tag -a <tag> -m "<message>"
 git push origin main develop --tags
 git config core.hooksPath hooks
 ```
+## Screenshots
 
+### Pre-commit hook blocking a bad commit
+![Hook blocked](screenshots/hook-blocked.png)
+
+### Merged Pull Request
+![PR merged](screenshots/pr-merged.png)
+
+### Final branch graph
+![Graph](screenshots/graph.png)
+
+### Tags on GitHub
+![Tags](screenshots/tags.png)
