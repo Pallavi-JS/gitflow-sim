@@ -1,0 +1,6 @@
+#!/bin/bash
+if git diff --cached -U0 | grep -E '^\+[^+].*(FIXME|console\.log)'; then
+  echo "Commit blocked: remove FIXME/console.log"
+  exit 1
+fi
+echo "pre-commit passed"
